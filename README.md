@@ -34,7 +34,6 @@ npm run test
 
 ### Functional Requirements
 
-- [ ] User must be able to create an user;
 - [ ] User must be able to register a meal (name, description, date and hour, if it is part of the diet);
 - [ ] User must be able to update a meal;
 - [ ] User must be able to delete a meal;
