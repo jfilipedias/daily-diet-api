@@ -1,5 +1,29 @@
 # Daily Diet API
 
+## Getting Started
+
+To run this project you must be using the Node.js on the version [v20.9.0](https://nodejs.org/dist/v20.9.0/) or greater.
+
+Setups the environment variables on a `.env` file based on the [.env.example](.env.example) file.
+
+Run the database migrations:
+
+```shell
+npm run knex -- migrate:latest
+```
+
+Run the server:
+
+```shell
+npm run dev
+```
+
+To run the test suit, you must create a `.env.test` file similar to the `.env` created earlier, however there is no need to define the `NODE_ENV` variable because it will be configured by Vitest. Then you can run the following command:
+
+```shell
+npm run test
+```
+
 ## Requirements
 
 ### Business Rules

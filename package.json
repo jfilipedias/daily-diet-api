@@ -6,6 +6,7 @@
 	"scripts": {
 		"dev": "tsx watch src/server.ts",
 		"build": "tsup src --out-dir build",
+		"knex": "node --no-warnings --import tsx ./node_modules/.bin/knex",
 		"lint": "eslint src --ext .ts --fix"
 	},
 	"keywords": [
@@ -28,6 +29,10 @@
 		"typescript": "^5.2.2"
 	},
 	"dependencies": {
-		"fastify": "^4.24.3"
+		"dotenv": "^16.3.1",
+		"fastify": "^4.24.3",
+		"knex": "^3.0.1",
+		"sqlite3": "^5.1.6",
+		"zod": "^3.22.4"
 	}
 }
