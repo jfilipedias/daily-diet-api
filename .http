@@ -1,0 +1,43 @@
+@hostname=http://localhost
+@port=3333
+@host={{hostname}}:{{port}}
+
+// Create Meal
+POST {{host}}/meals
+Content-Type: application/json
+
+{
+  "name": "Whey",
+  "description": "Whey with yorgut",
+  "date": "12/12/2023", 
+  "hour": "20:00",
+  "diet": true 
+}
+
+###
+
+// Get all meals
+GET {{host}}/meals
+Accept: application/json
+
+###
+
+// Get meal by id
+@id=0fd96015-4b4b-4408-b80d-199d0bf8a46d
+GET {{host}}/meals/{{id}}
+Accept: application/json
+
+###
+
+// Update a meal
+@id=0fd96015-4b4b-4408-b80d-199d0bf8a46d
+PUT {{host}}/meals/{{id}}
+Content-Type: application/json
+
+{
+  "name": "Whey with yorgut",
+  "description": "Whey with yorgut",
+  "date": "12/12/2023", 
+  "hour": "20:01",
+  "diet": true 
+}
