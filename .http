@@ -29,7 +29,7 @@ Accept: application/json
 
 ###
 
-// Update a meal
+// Update meal
 @id=0fd96015-4b4b-4408-b80d-199d0bf8a46d
 PUT {{host}}/meals/{{id}}
 Content-Type: application/json
@@ -41,3 +41,10 @@ Content-Type: application/json
   "hour": "20:01",
   "diet": true 
 }
+
+###
+
+// Delete meal
+@id=0fd96015-4b4b-4408-b80d-199d0bf8a46d
+DELETE {{host}}/meals/{{id}}
+Accept: application/json
