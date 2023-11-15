@@ -4,6 +4,6 @@ import { env } from './env'
 
 const app = fastify()
 
-app.register(mealRoutes, { prefix: '/' })
+app.register(mealRoutes, { prefix: '/meals' })
 
 app.listen({ port: env.PORT }).then(() => console.log('HTTP Server Running.'))
