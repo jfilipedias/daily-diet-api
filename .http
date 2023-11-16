@@ -7,11 +7,11 @@ POST {{host}}/meals
 Content-Type: application/json
 
 {
-  "name": "Whey",
-  "description": "Whey with yorgut",
+  "name": "X-Burguer",
+  "description": "Hamburguer with cheese",
   "date": "12/12/2023", 
-  "hour": "20:00",
-  "diet": true 
+  "hour": "21:00",
+  "diet": false 
 }
 
 ###
